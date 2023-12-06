@@ -1,0 +1,17 @@
+# security-action.yml
+name: "MetaMask Security Action Webhook"
+
+on:
+  repository_dispatch:
+    types: [code_scanning_alert]
+
+jobs:
+  run-security-scan:
+    runs-on: ubuntu-latest
+    steps:   
+      - name: echo stuff
+        run: |
+          echo " GOT IT"
+        shell: bash
+
+          
