@@ -3,7 +3,7 @@ name: "MetaMask Security Action Webhook"
 
 on:
   repository_dispatch:
-    types: [code_scanning_alert]
+    # types: [ping,code_scanning_alert]
 
 jobs:
   run-security-scan:
